@@ -146,3 +146,4 @@ dist-ssr
 *.sln
 *.sw?
 
+.vs/slnx.sqlite

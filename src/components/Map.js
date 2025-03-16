@@ -29,8 +29,8 @@ export function addRows() {
             const row = Grass(rowIndex);
 
             rowData.trees.forEach(({ tileIndex, height }) => {
-                const three = Tree(tileIndex, height);
-                row.add(three);
+                const tree = Tree(tileIndex, height);
+                row.add(tree);
             });
 
             map.add(row);

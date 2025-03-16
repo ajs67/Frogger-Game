@@ -24,7 +24,7 @@ export function Tree(tileIndex, height) {
         })
     );
     bush.position.z = height / 2 + 20;
-    tree.add(crown);
+    tree.add(bush);
 
     return tree;
 }

@@ -4,6 +4,12 @@ import { Tree } from "./Tree";
 
 export const metadata = [
     {
+        type: "car",
+        direction: false,
+        speed: 1,
+        vehicles: [{ initialTileIndex: 2, color: 0xff0000 }],
+    },
+    {
         type: "forest",
         trees: [
             { tileIndex: -3, height: 50 },
@@ -31,6 +37,21 @@ export function addRows() {
             rowData.trees.forEach(({ tileIndex, height }) => {
                 const tree = Tree(tileIndex, height);
                 row.add(tree);
+            });
+
+            map.add(row);
+        }
+
+        if (rowData.type === "car") {
+            const row = Road(rowIndex);
+
+            rowData.vehicles.forEach((vehicle) => {
+                const car = Car(
+                    vehicle.initialTileIndex,
+                    rowData.direction,
+                    vehicle.color
+                );
+                row.add(car);
             });
 
             map.add(row);

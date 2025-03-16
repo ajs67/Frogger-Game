@@ -10,6 +10,8 @@ function Player() {
             flatShading: true,
         })
     );
+    body.castShadow = true;
+    body.receiveShadow = true;
     body.position.z = 10;
 
     return body;

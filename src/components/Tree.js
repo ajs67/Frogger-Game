@@ -14,6 +14,8 @@ export function Tree(tileIndex, height) {
     );
 
     trunk.position.z = 10;
+    trunk.castShadow = true;
+    trunk.receiveShadow = true;
     tree.add(trunk);
 
     const bush = new THREE.Mesh(
@@ -24,7 +26,10 @@ export function Tree(tileIndex, height) {
         })
     );
     bush.position.z = height / 2 + 20;
+    bush.castShadow = true;
+    bush.receiveShadow = true;
     tree.add(bush);
+
 
     return tree;
 }

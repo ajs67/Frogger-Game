@@ -10,5 +10,7 @@ export function Wheel(x) {
     );
     wheel.position.x = x;
     wheel.position.z = 6;
+    wheel.castShadow = true;
+    wheel.recieveShadow = true;
     return wheel;
 }

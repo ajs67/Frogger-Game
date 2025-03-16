@@ -1,5 +1,6 @@
 import * as THREE from "three";
 import { Grass } from "./Grass";
+import { Tree } from "./Tree";
 
 export const metadata = [
     {

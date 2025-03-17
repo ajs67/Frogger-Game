@@ -27,3 +27,10 @@ function initializeGame() {
 
 const renderer = Renderer();
 renderer.render(scene, camera);
+renderer.setAnimationLoop(animate);
+
+function animate() {
+    animateVehicles();
+
+    renderer.render(scene, camera);
+}

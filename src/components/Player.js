@@ -16,3 +16,23 @@ function Player() {
 
     return body;
 }
+
+export const position = {
+    currentRow: 0,
+    currentTile: 0,
+};
+
+export const movesQueue = [];
+
+export function queueMove(direction) {
+    movesQueue.push(direction);
+}
+
+export function stepCompleted() {
+    const direction = movesQueue.shift();
+
+    if (direction === "forward") position.currentRow += 1;
+    if (direction === "backward") position.currentRow -= 1;
+    if (direction === "left") position.currentTile -= 1;
+    if (direction === "right") position.currentTile += 1;
+}

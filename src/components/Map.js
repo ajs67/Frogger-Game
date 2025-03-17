@@ -9,8 +9,12 @@ export const metadata = [
     {
         type: "truck",
         direction: true,
-        speed: 0,
-        vehicles: [{ initialTileIndex: -4, color: 0x00ff00}],
+        speed: 40,
+        vehicles: [
+            { initialTileIndex: -6, color: 0xf00000},
+            { initialTileIndex: 0, color: 0x00aaff},
+            { initialTileIndex: 7, color: 0x333333},
+        ],
     },
     {
         type: "forest",
@@ -23,8 +27,13 @@ export const metadata = [
     {
         type: "car",
         direction: false,
-        speed: 1,
-        vehicles: [{ initialTileIndex: 2, color: 0xff0000 }],
+        speed: 60,
+        vehicles: [
+            { initialTileIndex: -8, color: 0xff0000 },
+            { initialTileIndex: -2, color: 0x00aa33 },
+            { initialTileIndex: 4, color: 0x0000aa },
+            { initialTileIndex: 9, color: 0xaa00ff },
+        ],
     },
     {
         type: "forest",

@@ -13,6 +13,14 @@ export const metadata = [
         vehicles: [{ initialTileIndex: -4, color: 0x00ff00}],
     },
     {
+        type: "forest",
+        trees: [
+            { tileIndex: -3, height: 45 },
+            { tileIndex: 2, height: 25 },
+            { tileIndex: 5, height: 30 },
+        ],
+    },
+    {
         type: "car",
         direction: false,
         speed: 1,

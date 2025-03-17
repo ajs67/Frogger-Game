@@ -2,7 +2,7 @@ import * as THREE from "three";
 import { metadata as rows } from "./components/Map";
 import { minTileIndex, maxTileIndex, tileSize } from "./constants";
 
-const clock = new THREE.clock();
+const clock = new THREE.Clock();
 
 export function animateVehicles() {
     const delta = clock.getDelta();

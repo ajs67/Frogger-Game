@@ -21,6 +21,7 @@ scene.add(dirLight);
 
 const camera = Camera();
 scene.add(camera);
+player.add(camera);
 
 initializeGame();
 

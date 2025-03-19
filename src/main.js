@@ -6,6 +6,7 @@ import { map, initializeMap} from "./components/Map";
 import { DirectionalLight } from "./components/DirectionalLight";
 import { animateVehicles } from "./animateVehicles";
 import { animatePlayer } from "./animatePlayer";
+import { isCollision } from "./utilities/isCollision";
 import "./style.css";
 import "./collectUserInput";
 
@@ -35,6 +36,7 @@ renderer.setAnimationLoop(animate);
 function animate() {
     animateVehicles();
     animatePlayer();
+    isCollision();
 
     renderer.render(scene, camera);
 }

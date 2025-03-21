@@ -26,6 +26,7 @@ export function endsUpInValidPosition(currentPosition, moves) {
         )
     ) {
         // Move is invalid, ignore command.
+        return false
     }
 
     return true;

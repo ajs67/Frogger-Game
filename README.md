@@ -1,4 +1,5 @@
 Frogger mobile game clone written in Javascript by Alexander Schwartz.
+3D Game Graphics using Three.js
 
 Todo:
 

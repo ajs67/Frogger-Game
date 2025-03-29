@@ -5,7 +5,7 @@ How to Run:
 
 1.) Clone repository
 2.) cd frogger-game
-3.) npm install
+3.) npm install three
 4.) npm run dev
 
 Todo:

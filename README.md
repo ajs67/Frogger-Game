@@ -1,6 +1,13 @@
 Frogger mobile game clone written in Javascript by Alexander Schwartz.
 3D Game Graphics using Three.js
 
+How to Run:
+
+1.) Clone repository
+2.) cd frogger-game
+3.) npm install
+4.) npm run dev
+
 Todo:
 
 1.) Add High Score Counter.

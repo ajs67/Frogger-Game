@@ -22,7 +22,7 @@ function Player() {
     const cap = new THREE.Mesh(
         new THREE.BoxGeometry(2, 10, 1),
         new THREE.MeshLambertMaterial({
-            color: 0xf0619a,
+            color: "black",
             flatShading: true,
         })
     );

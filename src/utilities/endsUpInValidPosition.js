@@ -3,6 +3,8 @@ import { minTileIndex, maxTileIndex } from "../constants";
 import { metadata as rows } from "../components/Map";
 
 export function endsUpInValidPosition(currentPosition, moves) {
+    // TODO: if game over, then block movement
+    
     // calculate where player would end after move
     const finalPosition = calculateFinalPosition(currentPosition, moves);
     

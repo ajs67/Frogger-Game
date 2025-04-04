@@ -25,7 +25,7 @@ export function Tree(tileIndex, height) {
             flatShading: true,
         })
     );
-    bush.position.z = height / 2 + 20;
+    bush.position.z = height / 2 + 15;
     bush.castShadow = true;
     bush.receiveShadow = true;
     tree.add(bush);

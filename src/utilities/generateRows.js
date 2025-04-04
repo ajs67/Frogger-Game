@@ -30,7 +30,7 @@ function generateForestMetadata() {
         } while (occupiedTiles.has(tileIndex));
         occupiedTiles.add(tileIndex);
 
-        const height = randomElement([15, 30, 45, 60]);
+        const height = randomElement([15, 30, 45, 20]);
 
         return { tileIndex, height };
     });

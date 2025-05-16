@@ -16,3 +16,4 @@ Todo:
 4.) Add Readme demo gif
 5.) Add game difficulties.
 6.) Add Power Ups and Bonuses.
+7.) Add demo gif.

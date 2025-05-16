@@ -34,10 +34,18 @@ body {
 
 #score {
   position: absolute;
-  top: 20px;
+  top: 80px;
   left: 20px;
   font-size: 2em;
   color: white;
+}
+
+#highScore {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 2em;
+  color: red;
 }
 
 #result-container {

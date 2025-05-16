@@ -25,6 +25,7 @@ const camera = Camera();
 player.add(camera);
 
 const scoreDOM = document.getElementById("score");
+const highScoreDOM = document.getElementById("highScore");
 const resultDOM = document.getElementById("result-container");
 
 initializeGame();
@@ -39,6 +40,7 @@ function initializeGame() {
 
     if (scoreDOM) scoreDOM.innerText = "0";
     if (resultDOM) resultDOM.style.visibility = "hidden";
+    if (highScoreDOM) highScoreDOM.innerText = "0";
 }
 
 const renderer = Renderer();

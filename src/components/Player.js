@@ -71,7 +71,10 @@ export function stepCompleted() {
 
     // Update score
     const scoreDOM = document.getElementById("score");
-    if (scoreDOM) scoreDOM.innerText = position.currentRow.toString();
+    const highScoreDOM = document.getElementById("highScore");
+    if (scoreDOM && position.currentRow.toString() > scoreDOM.innerText) scoreDOM.innerText = position.currentRow.toString();
+    if (highScoreDOM && scoreDOM.innerText > highScoreDOM.innerText) highScoreDOM.innerText = scoreDOM.innerText;
+    //if (highScoreDOM) highScoreDOM.innerText = position.currentRow.toString();
 }
 
 export function initializePlayer() {
